@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Input } from "./components/ui/input";
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
+const sheetURL = import.meta.env.VITE_REACT_APP_SHEET_URL;
+
 
 export default function PendriveOrderForm() {
   const [formData, setFormData] = useState({
@@ -28,7 +30,7 @@ export default function PendriveOrderForm() {
     setStatus("Submitting...");
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/YOUR_WEB_APP_URL_HERE/exec", {
+      const response = await fetch(sheetURL, {
         method: "POST",
         mode: "no-cors",
         headers: {
