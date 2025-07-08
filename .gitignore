@@ -1,0 +1,49 @@
+# Build directories
+/build/
+/bin/
+/out/
+/Debug/
+/Release/
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Dependency files
+*.d
+
+# IDE / Editor settings
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# VSCode
+.vscode/
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# CMake (if using)
+/CMakeFiles/
+/CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Git
+*.orig
